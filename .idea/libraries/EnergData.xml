@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="EnergData">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/EnergData.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

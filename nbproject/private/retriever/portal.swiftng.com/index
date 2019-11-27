@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	SWIFT NETWORKS : No Access
+</title>
+
+    <script src="Scripts/swift.js" type="text/javascript"></script>
+    <script src="Scripts/quicklinks_direct.js" type="text/javascript"></script>
+    <script type="text/javascript" src="Scripts/jquery-1.5.2.min.js"></script>	
+    
+    <script type="text/javascript" language="javascript" src="Scripts/jquery.dropdownPlain.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.js"></script>
+    
+    <script type="text/javascript" src="Scripts/MicrosoftAjax.js"></script>
+    
+    <link href="Content/style.css" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Gudea" rel="stylesheet" type="text/css" /><link rel="stylesheet" href="Content/Loading.css" type="text/css" media="screen" /><link rel="stylesheet" type="text/css" href="Content/tooltipster.css" />
+   
+
+    <script language="javascript" type="text/javascript">
+        function init() {
+            var payment_partner = $get("partner");
+            if (payment_partner != null) {
+                $addHandler(payment_partner, "change", bindOptions);
+            }
+        }
+
+        function PopLiveChat() {
+            var url = "http://swiftng.kayako.com/visitor/index.php?/LiveChat/Chat/Request/_sessionID=68ex8nei0omp2o6aeewxloxznubcgppr/_proactive=0/_filterDepartmentID=/_randomNumber=17/_fullName=/_email=/_promptType=chat";
+            window.open(url, "PopLiveChat", "height=650, width=550, location=0, menubar=0, resizable=no, scrollbars=0, status=0, titlebar=0, toolbar=0", "");
+        }
+
+        function CheckInputOnClick() {
+            if (document.log.username.value == "Enter User ID") {
+                document.log.username.value = "";
+            }
+            if (document.log.password.value == "Enter Password") {
+                document.log.password.value = "";
+            }
+        }
+        function unexpandCollapse(obj) {
+            //obj.style.display = "inline-block";
+            if (obj == "up") {
+                document.getElementById("up").style.display = "none";
+                document.getElementById("down1").style.visibility = "visible";
+                document.getElementById("uptext").firstChild.nodeValue = "Click here to expand";
+            }
+            else if (obj == "userloadpin") {
+                document.getElementById("userloadpin").style.display = "none";
+                document.getElementById("down2").style.visibility = "visible";
+            }
+        }
+        function expandCollapse(obj) {
+            //obj.style.display = "inline-block";
+            if (obj == "up") {
+                document.getElementById("up").style.display = "inline";
+                document.getElementById("down1").style.visibility = "hidden";
+                document.getElementById("uptext").firstChild.nodeValue = "";
+                //alert(document.getElementById("uptext").firstChild.nodeValue);
+            }
+            else if (obj == "userloadpin") {
+                document.getElementById("userloadpin").style.display = "inline";
+                document.getElementById("down2").style.visibility = "hidden";
+            }
+        }
+        function doExpandCollapse(st, obj) {
+            if (st == "up") {
+                document.getElementById(obj).style.display = "inline";
+                document.getElementById("down1").style.visibility = "hidden";
+                //document.getElementById("uptext").firstChild.nodeValue = "";
+                //alert(document.getElementById("uptext").firstChild.nodeValue);
+            }
+        }
+        function doUnexpandCollapse(st, obj) {
+            if (st == "down") {
+                document.getElementById(obj).style.display = "none";
+                //document.getElementById("down1").style.visibility = "visible";
+                //document.getElementById("uptext").firstChild.nodeValue = "Click here to expand";
+            }
+        }             
+    </script>
+    
+    <link rel="shortcut icon" href="Content/images/swift_icon.ico" />
+
+    <script type="text/javascript">
+        function buttonsclick() {
+            $("body").append("<div id='display_overlay'></div>");
+            $("body").append("<div id='centerpoint'><div id='process_dialog'><div id='title_div'>Processing... Please wait</div><center><img src='Content/images/loading2.gif' /><br/><input id='quitbutton' style='display:none' type='button' value='Click here to quit to home page' onclick='window.location.href=\"/Home/Default\"' class='button' /></center></div></div>");
+            $("#display_overlay").show();
+            $("#process_dialog").show();
+        }
+
+        function waitPreloadPage() {
+            $("#display_overlay").hide();
+            $("#process_dialog").hide();
+            $("#process_dialog1").hide();
+        }
+
+        //        $(function () {
+        //            $(".buttonStyle").attr("onclick", "Javascript:buttonsclick()");
+        //        });
+
+        $(function() {
+            $("#process_dialog1").hide();
+            $('.buttonStyle').live('click', function() {
+                $("#display_overlay").show();
+                $("#process_dialog1").show();
+            });
+        });
+
+        function confirm() {
+            if (document.getElementById("username").value == "" || document.getElementById("password").value == "") {
+                alert("You must specify both username and password.");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        function confirm02() {
+            if (document.getElementById("uName").value == "") {
+                alert("Invalid username or user ID.");
+                return false;
+            }
+            else if (document.getElementById("msisdn").value == "") {
+                alert("Invalid MAC address.");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }	
+    </script>
+    <script type="text/javascript" src="Scripts/jquery-1.7.0.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>
+    
+    <style>
+        .headertag {
+	        font-family:arial, tahoma, sans-serif !important;
+	        width:auto;
+	        height:auto;
+            height:20px;
+            font-size:18px;
+            font-weight:300;
+	        color:#EC2022;
+	        padding-top:20px;
+        }
+		
+		
+        #myBtn 
+        {
+        	padding: 8px 12px; color: #ffffff; font-weight: bold; background-image: -webkit-linear-gradient(#88c149, #73a839 60%, #699934); background-image: linear-gradient(#88c149, #73a839 60%, #699934); background-repeat: no-repeat; border-radius: 5px; border: 0px solid #59822c; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff88c149', endColorstr='#ff699934', GradientType=0); filter: none;
+        }
+    </style>
+</head>
+
+<body onload="waitPreloadPage(); init()" onunload="GUnload();">
+    <script type="text/javascript">
+        //  $("body").append("<div id='display_overlay'></div>");
+        //  $("body").append("<div id='centerpoint'><div id='process_dialog'><div id='title_div'>Loading... Please wait</div><center><img src='Content/images/loading.gif' /><br/><input id='quitbutton' style='display:none' type='button' value='Click here to quit to home page' onclick='window.location.href=\"/Home/Default\"' class='button' /></center></div></div>");
+        //  $("body").append("<div id='centerpoint'><div id='process_dialog1'><div id='title_div'>Processing... Please wait</div><center><img src='Content/images/loading.gif' /><br/><input id='quitbutton' style='display:none' type='button' value='Click here to quit to home page' onclick='window.location.href=\"/Home/Default\"' class='button' /></center></div></div>");
+        //  $("#display_overlay").show();
+        //  $("#process_dialog").show();
+    </script>
+    
+    <div id="header_wrap">
+	    <div id="header">
+    	    <div id="logo"><img src="Content/newimages/swfitnglogo.jpg" width="238" height="42" /></div>    
+            <div id="search">
+                <form>
+                    <span>
+                        <input id="q" type="text" class="search square" />
+                        <input onclick="javascript:return ajaxSearch();" type="button" value="FIND">
+                    </span>
+                    <script type="text/javascript" src="Scripts/ajaxsearch.js"></script>
+                </form>
+            </div>
+            <div id="headertag">
+    	        <div class="headertag">Achieve More</div>
+            </div>
+        </div>
+    </div>
+    <div id="navigation">
+        <div class="menu"></div>
+    </div>
+    <div id="home_container">
+        <div id="content_container">                    					
+            
+             
+             
+            <div id="reportBox" class="content" style="display:block;">
+                 
+                        <div align="center" style="margin-right:-3%;">
+                            <img name="about_r5_c1" src="Content/images/stop.jpg" border="0" style="border:0px none transparent; height:100px;" id="Img1" alt="" /><br /><br />
+                            <span class="transIDBox" style="font-size:1.1em; font-weight:normal; padding:5px; line-height:1.2em;">
+                                Browsing is not permitted!
+                            </span>
+                        </div>
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td align="center">
+                                    <div class="text2" style="width:67%; color:#000000 !important; font-size:0.9em !important; text-align:left !important; margin:2% 0% 0% 3%;"><fieldset class='rect_box curvedBorder'><legend class='text_black'><b>Notification</b></legend><div><ol style='padding-left:20px !important; margin:0px !important;'><li class='text3'>You have <b>&#8358;&nbsp;4781.5</b> in your Unused balance.</li><li class='text3'>Please contact our customer care center on <b>01-7101010</b> or email us at <a href='mailto:customercare@swiftng.com' style='text-decoration:none;'>customercare@swiftng.com</a> to inform us about this.</li></ol></div></fieldset></div>
+                                </td>
+                            </tr>
+                        </table>
+                 
+            
+                 <div align="center" style="margin:7% 0% 0% 3%;">
+                     <!-- fieldset class="text_black curvedBorder" style="width:55%;" -->
+                     <!-- fieldset class="text_black" style="width:55%; border:0px none transparent;" -->
+                     <fieldset class="text_black curvedBorder" style="width:65%;">
+                        <!--legend align="center" class="contactus"><span class="text2" style="color:#000000">Don't have a selfcare login password? Select an option below to renew your subscription</span></legend-->
+                        <!--legend align="center" class="contactus"><span class="text2" style="color:#000000">Select an option below to renew your subscription</span></legend-->
+                        <legend align="center" class="contactus"><span class="text2" style="color:#000000">Hotline Mode</span></legend>
+                        <TABLE frame='void' rules='none' summary='Sub-Data-Table' border='0' cellspacing='0' cellpadding='0' style='width:99%;'>
+                             <!-- 13052016: Commented out pending approval to go LIVE -->
+		                     
+		                     <!-- 13052016: Commented out pending approval to go LIVE -->
+		                     
+		                     <TR>
+		                        <TD colspan="3" align="center" style='width:100%; vertical-align:middle;'>
+		                            <DIV style="margin:0% 0% 1% 0%; /*margin:8% 0% 1% 0%;*/">
+				                        <a href="http://www.swiftng.com/Account/LogOn?param=3" name="SelfcareLogin" id="SelfcareLogin" style="width:94%; padding:20px 5px !important; " class="stdButton tooltip" title="Login to your selfcare account">Login to your self-care account</a>
+                                        
+                                        <!-- a href="http://www.swiftng.com/account/register/?option=2342600027893" style="text-decoration:none;">click here to register for online setup</a -->
+                                        
+                                        <!-- a href="http://www.swiftng.com/account/register" style="color:#600; text-decoration:none;">click here to register for online setup</a -->
+                                        
+                                    </DIV>
+			                     </TD>
+		                     </TR>
+	                    </TABLE>
+                     </fieldset>
+                 </div>
+                 
+             </div>
+        </div>
+        <div id="home_bar">
+            <div id="odometer"><img src="Content/newimages/odometer.png" width="127" height="128" /></div>
+            <div id="speed_test"><a href="#"><img src="Content/newimages/speedtest.png" width="200" height="32" border="0" /></a></div>
+            <div id="home_bar_widgets">
+			    <div id="bar_widgets">
+				    <div class="bar_widgets_icon"><img src="Content/newimages/widget_phone.png" width="23" height="23" /></div>
+                    <div class="bar_widgets_title">Hotline: +234-1-710-10-10</div>
+                    <!--
+					<div class="bar_widgets_title">
+                        <input id="myBtn" type="button" onclick="location.href='https://freecall.swiftng.com/';" value="Click Here to Call Us For Free" />
+                    </div>
+					-->
+                </div>
+                <div id="bar_widgets">
+				    <script type="text/javascript">
+				        var LHCChatOptions = {};
+				        LHCChatOptions.opt = { widget_height: 340, widget_width: 300, popup_height: 520, popup_width: 500, domain: 'http://www.swiftng.com/' };
+				        (function() {
+				            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				            var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://') + 1)) : '';
+				            var location = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+				            po.src = 'http://webchat.swiftng.com/index.php/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(leaveamessage)/true?r=' + referrer + '&l=' + location;
+				            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				        })();
+	                </script>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="plans_divider"></div>
+    <div id="attractor_hooks" style="padding:10px 0px !important;">
+        <div id="attractor_do" style="font-family:arial, tahoma, sans-serif !important;">
+            <div id="attractor_renew">
+              <div class="attractor_do_icon"><img src="Content/newimages/why_icon.png" width="31" height="23" /></div>
+              <div class="attractor_do_title"><a href="http://www.swiftng.com0/products/advantage" class="attractor_do_title" style="font-size:0.9em !important; color:#EC2022 !important;"><b>Why&nbsp;buy?</b></a></div>
+            </div>
+            <div id="attractor_renew">
+              <div class="attractor_do_icon" style="padding-right:5px !important;"><img src="Content/newimages/coverage.png" width="31" height="23" /></div>
+              <div class="attractor_do_title"><a href="http://www.swiftng.com0/products/coverage" class="attractor_do_title" style="font-size:0.9em !important; color:#EC2022 !important;"><b>Check&nbsp;coverage&nbsp;areas</b></a></div>
+            </div>
+            <div id="attractor_renew">
+              <div class="attractor_do_icon"><img src="Content/newimages/where_icon.png" width="31" height="23" /></div>
+              <div class="attractor_do_title"><a href="http://www.swiftng.com0/products/retailoutlets" class="attractor_do_title" style="font-size:0.9em !important; color:#EC2022 !important;"><b>Where&nbsp;to&nbsp;buy?</b></a></div>
+            </div>
+            <div id="attractor_renew">
+              <div class="attractor_do_icon"><img src="Content/newimages/renew_icon.png" width="31" height="23" /></div>
+              <div class="attractor_do_title"><a href="http://www.swiftng.com0/Account/LogOn" class="attractor_do_title" style="font-size:0.9em !important; color:#EC2022 !important;"><b>How&nbsp;do&nbsp;I&nbsp;renew?</b></a></div>
+            </div>
+        </div>
+        <div id="social_icons" align="right">
+            <div class="social_facebook" style="float:right;"><a href="https://www.instagram.com/swift4glte/" target="Instagram"><img src="Content/newimages/instagramIcon.png" width="30" height="30" border="0" /></a></div>
+            <div class="social_facebook" style="float:right;"><a href="https://www.facebook.com/SWIFT.Networks" target="Facebook"><img src="Content/newimages/socialicons_r1_c1.png" width="30" height="30" border="0" /></a></div>
+            <div class="social_facebook" style="float:right;"><a href="https://twitter.com/SWIFT4Glte" target="Twitter"><img src="Content/newimages/socialicons_r1_c3.png" width="30" height="30" border="0" /></a></div>
+            <div class="social_facebook" style="float:right;"><a href="https://www.linkedin.com/company/swift-4g-lte?trk=biz-companies-cym" target="LinkedIn"><img src="Content/newimages/socialicons_r1_c5.png" width="30" height="30" border="0" /></a></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="footer">
+        <div class="copy" style="font-family:arial, tahoma, sans-serif !important; font-size:0.8em !important;">
+            &copy; SWIFT Networks. All rights reserved.
+         </div>
+    </div>
+    
+    <!-- WiMAX SwapOut Notification -->
+    <script type="text/javascript">
+        $("#noticeBtn").live("click", function(event) {
+            $("#noticeBox").slideUp(50);
+            $("#reportBox").slideDown(40);
+        });
+    </script>
+</body>
+
+</html>
